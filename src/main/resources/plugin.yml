@@ -1,0 +1,6 @@
+name: MultiWeb
+version: '1.0'
+main: nl.multitime.multiWeb.MultiWeb
+api-version: '1.19'
+authors: [ MultiDevelopment ]
+description: Minecraft Client Made by Multtime himself

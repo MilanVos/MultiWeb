@@ -1,0 +1,58 @@
+# MultiWeb NamelessMC Integration Configuration
+
+# API Settings
+api:
+  # Your NamelessMC website API URL (without trailing slash)
+  url: "https://example.com/api/v2"
+  # Your NamelessMC API key
+  key: "your_api_key_here"
+
+# Command cooldown in seconds
+cooldown: 60
+
+# Registration settings
+registration:
+  # Send verification instructions after registration
+  send-verification-instructions: true
+
+# Verification settings
+verification:
+  # Execute commands after successful verification
+  execute-commands: false
+  # Commands to execute after verification
+  # Available placeholders: {player}, {uuid}
+  commands:
+    - "lp user {player} parent add verified"
+    - "eco give {player} 100"
+
+# Join check settings
+join-check:
+  # Enable checking if players are registered when they join
+  enabled: true
+  # Notify players if they're not registered
+  notify-unregistered: true
+  # Send registration instructions to unregistered players
+  send-register-instructions: true
+
+# Notification settings
+notifications:
+  # Enable checking for website notifications
+  enabled: true
+  # Check interval in seconds
+  interval: 60
+
+# Messages
+messages:
+  prefix: "&8[&bMultiWeb&8] "
+  no-permission: "&cJe hebt geen toestemming om dit commando uit te voeren."
+  cooldown: "&cJe moet nog {seconds} seconden wachten voordat je dit commando weer kunt gebruiken."
+  invalid-email: "&cVoer een geldig e-mailadres in."
+  register-success: "&aJe account is succesvol geregistreerd! Controleer je e-mail voor verdere instructies."
+  register-already: "&cJe hebt al een account geregistreerd!"
+  register-error: "&cEr is een fout opgetreden bij het registreren van je account: {error}"
+  register-instructions: "&eGebruik /register <email> om je te registreren op onze website."
+  verification-instructions: "&eControleer je e-mail voor een verificatiecode en gebruik /verify <code> om je account te verifiëren."
+  verify-success: "&aJe account is succesvol geverifieerd!"
+  verify-error: "&cEr is een fout opgetreden bij het verifiëren van je account: {error}"
+  not-registered: "&eJe bent nog niet geregistreerd op onze website!"
+  notifications: "&eJe hebt {count} ongelezen notificaties op de website!"
