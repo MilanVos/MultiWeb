@@ -46,7 +46,6 @@ De plugin heeft een uitgebreid configuratiebestand waarmee je alle aspecten van 
 
 Als je problemen ondervindt of vragen hebt, kun je contact opnemen via:
 - GitHub Issues
-- Discord: [Link naar je Discord server]
 
 ## Licentie
 
