@@ -1,6 +1,32 @@
 name: MultiWeb
-version: '1.0'
+version: '${project.version}'
 main: nl.multitime.multiWeb.MultiWeb
-api-version: '1.19'
-authors: [ MultiDevelopment ]
-description: Minecraft Client Made by Multtime himself
+api-version: '1.16'
+authors: [MultiTime]
+description: NamelessMC integration for Minecraft servers
+commands:
+  nameless:
+    description: Main command for MultiWeb NamelessMC integration
+    usage: /nameless
+    permission: multiweb.admin
+  register:
+    description: Register your Minecraft account on the website
+    usage: /register <email>
+    permission: multiweb.register
+  verify:
+    description: Verify your Minecraft account on the website
+    usage: /verify <code>
+    permission: multiweb.verify
+permissions:
+  multiweb.admin:
+    description: Allows access to admin commands
+    default: op
+  multiweb.register:
+    description: Allows players to register their account
+    default: true
+  multiweb.verify:
+    description: Allows players to verify their account
+    default: true
+  multiweb.bypass:
+    description: Bypasses registration checks and notifications
+    default: op
